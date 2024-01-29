@@ -4,7 +4,10 @@
 Neovim plugin that sends code in the current buffer to Stata GUI
 
 ## WIP
-Currently this only works for macOS. I do not have Windows PC with Stata installed but would love to add Windows and Linux support soon!
+Currently this only works for macOS. 
+
+I do not have Windows PC with Stata installed but would love to add Windows and Linux support soon!
+
 This is also my first attempt in making neovim plugin so I suspect there is lots of room for improvement.
 
 ## Problem
@@ -38,10 +41,10 @@ You need to set config variable “stata_ver” to specify your version of Stata
 Default keybinding is <leader>r for both normal and visual mode. 
 
 ### Normal mode
-<leader>r runs entire file
+\<leader\>r runs entire file
 
 ### Visual mode
-<leader>r runs selected line(s), from beginning row of selection to the end row. 
+\<leader\>r runs selected line(s), from beginning row of selection to the end row. 
 
 ### Custom bindings
 This comes with custom command :DoStata, which can be used to create custom bindings. Same command is used for normal and visual mode.
