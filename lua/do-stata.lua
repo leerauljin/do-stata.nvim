@@ -55,7 +55,7 @@ M.run_do = function(filename)
     '-e',
     'activate',
     '-e',
-    string.format('DoCommand \"do %s\"', filename),
+    string.format('DoCommandAsync \"do %s\"', filename),
     '-e',
     'end tell'
   }
@@ -86,7 +86,6 @@ M.setup = function(opts)
 
   map("n", "<leader>r", "<cmd>DoStata<cr>")
   map("v", "<leader>r", "<cmd>DoStata<cr>")
-
 end
 
 return M

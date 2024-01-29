@@ -58,5 +58,5 @@ vim.keymap.set("v", "<leader>r", "<cmd>DoStata<cr>")
 1. Check if current mode is normal or visual
 2. If it is normal mode, parse entire current buffer. If it is visual mode, parse beginning row of selection to the end row.
 3. Parsed lines (in text form) is sent to a temporary do file.
-4. Run that do file using AppleScript. This opens new Stata window if Stata is not running. If Stata is running, focus is moved to currently open Stata window.
+4. Run that do file using AppleScript. This opens new Stata window if Stata is not running. If Stata is running, focus is moved to currently open Stata window. (this operation is also asyncronous, meaning the do file is put on Stata's job queue).
 5. When you close neovim instance, temporary files are deleted.
